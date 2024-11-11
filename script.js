@@ -17,7 +17,9 @@ const heroContent = [
                     {icon: "facebook.svg",  href: "google.com"},
                     {icon: "tik-tok.svg",  href: "google.com"},
                     {icon: "instagram.svg",  href: "google.com"},
-                    {icon: "whatsapp.svg",  href: "google.com"}]}
+                    {icon: "whatsapp.svg",  href: "google.com"},
+                    {icon: "github.svg", href: "https://github.com/GeroleoErickson"}
+                ]}
             
             
             ]}

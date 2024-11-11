@@ -46,7 +46,7 @@ button{
     padding: .5rem 1rem;
     border: none;
     cursor: pointer;
-    
+    z-index: 1;
 }
 
 .animated-buttons{
@@ -97,10 +97,11 @@ input, textarea{
     width: 100%;
     padding: .5rem 1rem;
     border-radius: .5rem;
-    border: 1px solid rgba(255, 255, 255, 0.178);
+    border: 1px solid rgba(255, 255, 255, 0.158);
     color: var(--paragraph);
     outline: none;
-    background-color: var(--card-color-light);
+    background-color: rgba(0, 0, 0, 0.404);
+    box-shadow: 1px 22px 35px -6px rgba(0, 0, 0, 0.753);
     vertical-align: top;
     backdrop-filter: blur(20px);
 }
@@ -602,7 +603,7 @@ small{
     width: 100%;
     
     max-height: 100vh;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.685), #0000005e, rgba(0,0,0,0)), url(assets/contacts/contact\ background.png);
+    background-image: url(assets/contacts/contact\ background.png);
     background-repeat: no-repeat;
     background-size: 130%;
     background-position:left;
