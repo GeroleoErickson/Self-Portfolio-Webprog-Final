@@ -217,6 +217,7 @@ svg{
 
 
 
+
 .floatUp{
     opacity: 0;
     transform: translateY(50px);
@@ -353,13 +354,14 @@ nav .navlinks .links a:hover::after {
 }
 
 .hero-content-con{
+    position: relative;
     width: 100%;
     justify-content: space-between;
 }
 
 .hero-content-con .left-hero-text{
     align-items: start;
-    width: 50%;
+    width: 35%;
     gap: 3rem;
 }
 
@@ -396,6 +398,66 @@ nav .navlinks .links a:hover::after {
     width: 690px;
 }
 
+
+
+.characteristics {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.281);
+    font-size: 1.3rem;
+    backdrop-filter: blur(60px);
+    color: white;
+}
+
+.characteristics.ed {
+    top: 55%;
+    right: 7%;
+    animation-delay: 2.2s;
+    background-color: #fb8500;
+    z-index: 1;
+}
+
+.characteristics.ed:hover{
+    box-shadow: 0 0 32px 10px rgba(250, 133, 0, 0.7);
+}
+
+.characteristics.ui-ux {
+    top: 25%;
+    right: 10%;
+    animation-delay: 2.6s;
+    background-color: #219ebc;
+    
+    z-index: 2;
+}
+.characteristics.ui-ux:hover{
+    box-shadow: 0 0 32px 10px rgba(33, 157, 188, 0.7);
+}
+
+
+.characteristics.gd {
+    top: 80%;
+    right: 33%;
+    background-color: #ff006e;
+    animation-delay: 2s;
+    z-index: 3;
+}
+
+.characteristics.gd:hover{
+    box-shadow: 0 0 32px 10px rgba(255, 0, 111, 0.7);
+}
+
+.characteristics.da {
+    top: 45%;
+    right: 40%;
+    animation-delay: 2.4s;
+    background-color: #1dd3b0;
+    z-index: 4;
+}
+
+.characteristics.da:hover{
+    box-shadow: 0 0 32px 10px rgba(29, 211, 174, 0.7);
+}
 /* End of hero Section */
 
 

@@ -14,10 +14,11 @@ const heroContent = [
                 ]
             },
                 {socials: [
-                    {icon: "facebook.svg",  href: "google.com"},
-                    {icon: "tik-tok.svg",  href: "google.com"},
-                    {icon: "instagram.svg",  href: "google.com"},
-                    {icon: "whatsapp.svg",  href: "google.com"},
+                    {icon: "facebook.svg",  href: "https://www.facebook.com/ericksondave.geroleo.5?mibextid=ZbWKwL"},
+                    {icon: "tik-tok.svg",  href: "https://www.tiktok.com/@xjsjssdkakakssj?_t=8rJIdlt8iYM&_r=1"},
+                    {icon: "instagram.svg",  href: "https://www.instagram.com/itsme.dabiii/profilecard/?igsh=MTF0YmNlc3N6eHoxZg=="},
+                    {icon: "telegram.svg",  href: "https://t.me/Dabiiisenpai"},
+                    {icon: "whatsapp.svg", href: "https://wa.me/09197011930"},
                     {icon: "github.svg", href: "https://github.com/GeroleoErickson"}
                 ]}
             
@@ -284,6 +285,11 @@ function showHero() {
 
         <img class="floatUp" src="assets/hero-pictures/${heroContent[1].content[1].my_self}" alt="me" width="700px">
     </div>
+
+    <p class="characteristics animated-buttons ed">Front End Developer</p>
+    <p class="characteristics animated-buttons ui-ux">UI/UX Desiner</p>
+    <p class="characteristics animated-buttons gd">Graphics Desiner</p>
+    <p class="characteristics animated-buttons da" >Digital Artist</p>
     `;
 
     const showAboutBtn = document.getElementById('showAbout');
@@ -396,7 +402,7 @@ function showProjects() {
             ${projectsContent[1].projects_con.map(project => `
                 <div class="projects-card d-flex-col">
                     <img src="assets/projects/${project.projects_card[0].img}" alt="${project.projects_card[1].details.title}" width="200px">
-                    <div class="gradient-text d-flex-col">
+                    <div class="gradient-text d-flex-col beat">
                         <h3>${project.projects_card[1].details.title}</h3>
                         <p>${project.projects_card[1].details.desc}</p>
                         <a href="#" target="_blank"><small>${project.projects_card[1].details.small}</small></a>
