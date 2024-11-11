@@ -23,6 +23,7 @@ html{
     --accent-color-red: #ffb703;
     --accent-color-cyan: #3fffee;
     --text-color: #333;
+    --text-color-light: #ffffffa8;
 
     --card-color-light: rgba(255, 255, 255, 0.03);
     --card-color-dark: rgba(0, 0, 0, 0.03);
@@ -33,6 +34,7 @@ body{
     height: 100dvh;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: var(--background-color-dark);
 }
 
 button{
@@ -81,6 +83,7 @@ p{
 }
 small{
     color: var(--accent-color-red);
+    cursor: pointer;
 }
 
 input, textarea{
@@ -199,12 +202,13 @@ input:focus{
 
 /* Greetings Section */
 .greetings{
+
     width: 100%;
     height: 100vh;
     justify-content: center;
-    gap: 2rem;
-    animation: slideup 1s ease;
-    animation-delay: 1.5s;
+    gap: 3rem;
+    /* animation: slideup 1s ease;
+    animation-delay: 1.5s; */
 }
 
 .greetings h1{
@@ -213,13 +217,15 @@ input:focus{
 
 .greetings button{
     font-size: 1.5rem;
+    border-radius: 2rem;
+    color: var(--text-color-light);
+    border: 1px solid var(--accent-color-red);
 }
 
 .greetings button:hover{
-    
-    border-radius: 2rem;
     transform: scale(1.1);
-    background-color:#3fffef4d;
+    color: var(--background-color-dark);
+    background-color:var(--accent-color-red);
     
 }
 
@@ -598,3 +604,13 @@ footer{
 }
 
 /* End of footer */
+
+.hero-section,
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section,
+.footer-section{
+    display: none;
+}
+
