@@ -99,19 +99,19 @@ const skillsContent = [
             {skills_card_details: [
                 {img_text: {img: "javaScript.png", name: "JavaScript"}},
                 {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
-                {years: "1.5 years"}
+                {years: "1 month"}
             ]},
 
             {skills_card_details: [
                 {img_text: {img: "canva.png", name: "Canva"}},
                 {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
-                {years: "1.5 years"}
+                {years: "5 years"}
             ]},
 
             {skills_card_details: [
                 {img_text: {img: "figma.png", name: "Figma"}},
                 {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
-                {years: "1.5 years"}
+                {years: "3 years"}
             ]}
         ]
         

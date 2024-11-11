@@ -558,12 +558,12 @@ nav .navlinks .links a:hover::after {
     transform: translateX(20%);
     box-shadow: 1px 22px 35px -6px rgba(0, 0, 0, 0.267);
     filter: saturate(1);
-    background-color: #ff8b0613;
+    background-color: #ff8b061c;
 }
 
 .skills-section .skills-con .skills-card:hover p,
 .skills-section .skills-con .skills-card:hover h3{
-    color: var(--accent-color-red)
+    color: var(--headline)
 }
 .skills-section .skills-con .skills-card .img-text{
     text-align: center;
