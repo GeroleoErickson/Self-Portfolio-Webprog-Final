@@ -222,8 +222,24 @@ const startBtn = document.getElementById("showHero");
 startBtn.onclick = function(){
     document.querySelector(".greetings").style.display = "none";
     showHero();
+    addLink(0);
 }
 
+
+function addLink(index) {
+    const navigation = document.getElementById("links");
+    const links = document.querySelector(".links");
+    
+        const link = document.createElement("a");
+        link.href = heroContent[0].nav_content[1].nav_links[0].links[index].href;
+        link.textContent = heroContent[0].nav_content[1].nav_links[0].links[index].name;
+        links.appendChild(link);
+    
+        navigation.appendChild(links);
+    }
+
+
+//   ${heroContent[0].nav_content[1].nav_links[0].links.map(link => `<a href="${link.href}">${link.name}</a>`).join('')}
 
 //show Hero Section
 function showHero() {
@@ -233,9 +249,9 @@ function showHero() {
     heroSection.innerHTML = `
     <nav class="d-flex">
         <img src="assets/${heroContent[0].nav_content[0].image}" alt="logo" width="40px">
-        <div class="navlinks d-flex">
-            <div class="links d-flex">
-                ${heroContent[0].nav_content[1].nav_links[0].links.map(link => `<a href="${link.href}">${link.name}</a>`).join('')}
+        <div class="navlinks d-flex" id="navlinks">
+            <div class="links d-flex" id="links">
+                
             </div>
 
             <div class="socials d-flex">
@@ -258,14 +274,18 @@ function showHero() {
         <img class="floatUp" src="assets/hero-pictures/${heroContent[1].content[1].my_self}" alt="me" width="700px">
     </div>
     `;
-    
+
     const showAboutBtn = document.getElementById('showAbout');
     showAboutBtn.onclick = function(){
         location.href="#about-section";
         AboutSection.style.display="flex";
         showAbout();
+        addLink(1);
     }
 }
+
+
+
 
 //show about
 function showAbout() {
@@ -307,6 +327,7 @@ function showAbout() {
         location.href="#skills-section";
         SkillsSection.style.display="flex";
         showSkills();
+        addLink(2);
     }
 }
 
@@ -346,6 +367,8 @@ function showSkills(){
         location.href="#projects-section";
         ProjectSection.style.display="flex";
         showProjects();
+        
+        addLink(3);
     }
 }
 
@@ -385,6 +408,7 @@ function showProjects() {
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
         showContacts();
         showFooter();
+        addLink(4);
     }
 }
 
