@@ -109,7 +109,7 @@ const skillsContent = [
 
     //2
     {button: 
-        {name: "Show Projects"}
+        {name: "Contact me"}
     }
 ];
 
@@ -267,15 +267,15 @@ function showHero() {
     }
 }
 
-
+//show about
 function showAbout() {
     AboutSection.style.display = "flex";
     AboutSection.innerHTML = `
-        <img src="assets/about-pictures/${aboutContent[0].img}" alt="me" width="500px">
+        <img src="assets/about-pictures/${aboutContent[0].img}" class="slide-right" alt="me" width="500px">
         <div class="about-con d-flex-col">
-            <h2>${aboutContent[1].about_con_content[0].h2}</h2>
+            <h2 class="slide-left">${aboutContent[1].about_con_content[0].h2}</h2>
             
-            <div class="address-con location d-flex-col">
+            <div class="address-con location d-flex-col slide-left" >
                 <h3>${aboutContent[1].about_con_content[1].address_con_content[0].title}</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" height="auto" viewBox="0 -960 960 960" width="35px" fill="#e8eaed">
                     <path d="M480-122.39q-11.69 0-23.38-4.03-11.7-4.04-21.16-12.5-53.84-49.62-100.77-102.2-46.92-52.57-81.57-105.11-34.66-52.54-54.85-104.15-20.19-51.62-20.19-99.7 0-138.46 89.57-224.19Q357.23-860 480-860t212.35 85.73q89.57 85.73 89.57 224.19 0 48.08-20.19 99.5-20.19 51.43-54.65 104.16-34.47 52.73-81.39 105.11-46.92 52.39-100.77 102-9.32 8.46-21.19 12.69-11.86 4.23-23.73 4.23Zm.07-363q29.85 0 51.04-21.26 21.2-21.26 21.2-51.11 0-29.85-21.26-51.05Q509.79-630 479.93-630q-29.85 0-51.04 21.26-21.2 21.26-21.2 51.12 0 29.85 21.26 51.04 21.26 21.19 51.12 21.19Z"/>
@@ -288,7 +288,7 @@ function showAbout() {
                 </div>
             </div>
     
-            <div class="address-con d-flex-col">
+            <div class="address-con d-flex-col slide-left">
                 <h3>${aboutContent[1].about_con_content[1].address_con_content[2].background_con_content.title}</h3>
                 <p>${aboutContent[1].about_con_content[1].address_con_content[2].background_con_content.paragraph}</p>
             </div>
@@ -321,7 +321,7 @@ function showSkills(){
 
         <div class="skills-con d-flex">
         ${skillsContent[1].skills_con_details.map(skills => `
-            <div class="skills-card d-flex-col">
+            <div class="skills-card d-flex-col floatUp">
                 <div class="img-text">
                     <img src="assets/my-skills/${skills.skills_card_details[0].img_text.img}" alt="${skills.skills_card_details[0].img_text.name}" width="200px">
                     <h3>${skills.skills_card_details[0].img_text.name}</h3>

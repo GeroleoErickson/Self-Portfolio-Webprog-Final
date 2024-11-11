@@ -23,7 +23,7 @@ html{
     --accent-color-red: #ffb703;
     --accent-color-cyan: #3fffee;
     --text-color: #333;
-    --text-color-light: #ffffffa8;
+    --text-color-light: #bebebe;
 
     --card-color-light: rgba(255, 255, 255, 0.03);
     --card-color-dark: rgba(0, 0, 0, 0.03);
@@ -59,7 +59,7 @@ section, footer{
 
 a{
     text-decoration: none;
-    color: white;
+    color: var(--text-color-light);
 }
 
 
@@ -79,7 +79,7 @@ h3{
 }
 
 p{
-    color: white;
+    color: var(--text-color-light);
 }
 small{
     color: var(--accent-color-red);
@@ -173,6 +173,32 @@ input:focus{
     }
 }
 
+@keyframes slidetoLeft {
+    0%{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+
+    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetoRight {
+    0%{
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+
+    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -197,6 +223,29 @@ input:focus{
     animation-delay: 1.4s;
 }
 
+
+.slide-left{
+    animation: slidetoLeft 2s ease-out forwards;
+    opacity: 0;
+}
+
+.slide-left:nth-child(1){
+    animation-delay: .2s;
+}
+
+.slide-left:nth-child(2){
+    animation-delay: .4s;
+}
+.slide-left:nth-child(3){
+    animation-delay: .6s;
+}
+
+
+.slide-right{
+    opacity: 0;
+    animation: slidetoRight 2s ease-out forwards;
+    animation-delay: .2s;
+}
 /* End of Animations */
 
 
@@ -323,6 +372,13 @@ nav .navlinks .links a:hover::after {
     border-radius: 10rem;
 }
 
+.hero-content-con .left-hero-text button:hover{
+    transform: scale(1.1);
+    color: var(--background-color-dark);
+    background-color:var(--accent-color-red);
+    
+}
+
 .hero-content-con img{
     width: 690px;
 }
@@ -378,25 +434,27 @@ nav .navlinks .links a:hover::after {
 .location{
     margin-top: 2rem;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(90deg, #fb8600e3, #ffb80300, rgba(0,0,0,0)), url(assets/about-pictures/address-bg.png);
+    background-image: linear-gradient(90deg, #041822, #0418225b, rgba(0,0,0,0)), url(assets/about-pictures/address-bg.png);
     background-position: 0 42%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.adress-detail-con{
+.address-detail-con{
     width: fit-content;
     height: 100%;
     padding: 0 0 0 1rem;
     gap: 2rem;
 }
-.adress-detail-con hr{
+.address-detail-con hr{
     width: 3px;
     height: 130px;
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 2rem;
 }
+
+
 
 
 /* Skills Section */
@@ -417,10 +475,14 @@ nav .navlinks .links a:hover::after {
     background-color: var(--card-color-light);
     padding: 3rem;
     border-radius: 1rem;
+    gap: 2rem;
     justify-content: space-between;
+    filter: saturate(0);
 }
 .skills-section .skills-con .skills-card:hover{
     transform: translateY(-30px);
+    box-shadow: 1px 22px 35px -6px rgba(0, 0, 0, 0.267);
+    filter: saturate(1);
 }
 .skills-section .skills-con .skills-card .img-text{
     text-align: center;
@@ -491,6 +553,8 @@ nav .navlinks .links a:hover::after {
 .projects-section .projects-con .projects-card .gradient-text p{
     line-height: 1.5rem;
 }
+
+
 .projects-section .projects-con .projects-card:hover img {
     filter: grayscale(0);
     opacity: 100%;
