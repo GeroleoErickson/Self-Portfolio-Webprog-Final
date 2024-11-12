@@ -129,8 +129,8 @@ const skillsContent = [
 const projectsContent = [
     //0
     {titles: 
-        {title: "My Skills", 
-        caption: "Technologies and Tools"}
+        {title: "My Projects", 
+        caption: "List of works that I created."}
     },
 
     //1
