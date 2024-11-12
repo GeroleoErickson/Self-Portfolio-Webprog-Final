@@ -222,6 +222,15 @@ hr{
     }
 }
 
+@keyframes blur {
+    0%{
+        filter: blur(20px);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+
 
 
 
@@ -416,6 +425,7 @@ nav .navlinks .links a:hover::after {
     border-radius: 1rem 2rem;
     background-color: rgba(0, 0, 0, 0.281);
     font-size: 1.3rem;
+    animation: floatUp 2s ease-out forwards, up-down 2.5s ease-in-out infinite, blur .5s ease-in forwards;
     backdrop-filter: blur(60px);
     color: white;
 }
