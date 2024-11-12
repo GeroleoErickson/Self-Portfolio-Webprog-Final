@@ -93,25 +93,25 @@ const skillsContent = [
             //0
             {skills_card_details: [
                 {img_text: {img: "html-Css.png", name: "Html & Css"}},
-                {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
+                {details: "I have 1.5 years of experience working with HTML and CSS. I can build responsive and visually appealing layouts that look great on different devices. My skills ensure a clean, organized structure and style for web pages."},
                 {years: "1.5 years"}
             ]},
 
             {skills_card_details: [
                 {img_text: {img: "javaScript.png", name: "JavaScript"}},
-                {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
+                {details: "I have been working with JavaScript for about a month, learning to add interactive features to websites. This skill allows me to create dynamic elements like animations and responsive forms. I’m continuing to deepen my knowledge to enhance user experience further."},
                 {years: "1 month"}
             ]},
 
             {skills_card_details: [
                 {img_text: {img: "canva.png", name: "Canva"}},
-                {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
+                {details: "With 5 years of experience in Canva, I can create a wide range of professional and eye-catching designs. I specialize in creating visuals for social media, presentations, and marketing materials. My Canva skills allow me to quickly produce polished, visually appealing content."},
                 {years: "5 years"}
             ]},
 
             {skills_card_details: [
                 {img_text: {img: "figma.png", name: "Figma"}},
-                {details: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos harum assumenda veniam corrupti ducimus quis quod quos asperiores, dicta sunt, ex rem facilis! Possimus ducimus dolorem non omnis itaque accusamus."},
+                {details: "I’ve been using Figma for 3 years to design clean, user-friendly interfaces for websites and apps. I focus on creating intuitive layouts that improve the user experience. My Figma skills bridge design and functionality, making concepts come to life effectively."},
                 {years: "3 years"}
             ]}
         ]
@@ -139,7 +139,7 @@ const projectsContent = [
             {img: "PCC.png"},
             {details: 
                 {title: "PCC Alab Carabaoan", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "Interactive Programming Final project during my 2nd Year using php html Css and JavaScript.",
                 small: "view"}
             }
         ]},
@@ -148,7 +148,7 @@ const projectsContent = [
             {img: "pharmaArshie.jpg"},
             {details: 
                 {title: "PharmaArshie Med. App.", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "This was created during my second year for my Mobile Development subject. It features a responsive layout and was embedded as an app, making it a hybrid application.",
                 small: "view"}
             }
         ]},
@@ -157,7 +157,7 @@ const projectsContent = [
             {img: "snubbyland.png"},
             {details: 
                 {title: "World Hardest Game Semi 3D", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "We recreated the world's hardest game, The Snubby Land, adding a semi-3D twist. This was made using Unity.",
                 small: "view"}
             }
         ]},
@@ -166,7 +166,7 @@ const projectsContent = [
             {img: "MarSU-rendered-logo.png"},
             {details: 
                 {title: "MarSU Official Logo", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "This was a competition at Marinduque State University, and they now use this as their official university logo. It was created entirely in Figma for design and Photopea for rendering.",
                 small: "view"}
             }
         ]},
@@ -175,7 +175,7 @@ const projectsContent = [
             {img: "brangay-Ibaba-logo.png"},
             {details: 
                 {title: "Ibaba Crossroad Logo", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "This was a commission to create a logo for a barangay. I made it using Figma and Photopea.",
                 small: "view"}
             }
         ]},
@@ -184,7 +184,7 @@ const projectsContent = [
             {img: "osiris.png"},
             {details: 
                 {title: "IX Osiris Gaming Logo", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "An Call of duty mobile Esports Logo for my team. This was made using pure figma.",
                 small: "view"}
             }
         ]},
@@ -193,7 +193,7 @@ const projectsContent = [
             {img: "luminaries-magazine.png"},
             {details: 
                 {title: "The Luminaries Magazine Cover", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                desc: "This was a commissioned magazine for a student from another university. It was created using only Canva.",
                 small: "view"}
             }
         ]},
@@ -201,8 +201,8 @@ const projectsContent = [
         {projects_card: [
             {img: "cryptoKnights.png"},
             {details: 
-                {title: "Crypto Knights Graphics", 
-                desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sint veritatis praesentium id, recusandae cupiditate.",
+                {title: "Crypto Knights Intram Shirt", 
+                desc: "This was created for my department as they compete during our Intramurals at Marinduque State University. I made this using ibisPaint, Canva, and Figma.",
                 small: "view"}
             }
         ]}
