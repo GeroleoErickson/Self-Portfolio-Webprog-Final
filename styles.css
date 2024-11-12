@@ -422,7 +422,7 @@ nav .navlinks .links a:hover::after {
 
 .characteristics.ed {
     top: 55%;
-    right: 7%;
+    right: 9%;
     animation-delay: 2.2s;
     background-color: #fb8500;
     z-index: 1;
