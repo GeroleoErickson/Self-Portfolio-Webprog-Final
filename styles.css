@@ -428,6 +428,11 @@ nav .navlinks .links a:hover::after {
     animation: floatUp 2s ease-out forwards, up-down 2.5s ease-in-out infinite, blur .5s ease-in forwards;
     backdrop-filter: blur(60px);
     color: white;
+    cursor: grab;
+}
+
+.characteristics:hover{
+    scale: 1.1;
 }
 
 .characteristics.ed {
@@ -439,7 +444,7 @@ nav .navlinks .links a:hover::after {
 }
 
 .characteristics.ed:hover{
-    box-shadow: 0 0 32px 10px rgba(250, 133, 0, 0.7);
+    box-shadow: 0 0 100px 10px rgba(250, 133, 0, 0.8);
 }
 
 .characteristics.ui-ux {
@@ -451,7 +456,7 @@ nav .navlinks .links a:hover::after {
     z-index: 2;
 }
 .characteristics.ui-ux:hover{
-    box-shadow: 0 0 32px 10px rgba(33, 157, 188, 0.7);
+    box-shadow: 0 0 100px 10px rgba(33, 157, 188, 0.8);
 }
 
 
@@ -464,7 +469,7 @@ nav .navlinks .links a:hover::after {
 }
 
 .characteristics.gd:hover{
-    box-shadow: 0 0 32px 10px rgba(255, 0, 111, 0.7);
+    box-shadow: 0 0 100px 10px rgba(255, 0, 111, 0.8);
 }
 
 .characteristics.da {
@@ -476,7 +481,7 @@ nav .navlinks .links a:hover::after {
 }
 
 .characteristics.da:hover{
-    box-shadow: 0 0 32px 10px rgba(29, 211, 174, 0.7);
+    box-shadow: 0 0 100px 10px rgba(29, 211, 174, 0.8);
 }
 /* End of hero Section */
 
@@ -575,6 +580,7 @@ nav .navlinks .links a:hover::after {
     box-shadow: 1px 22px 35px -6px rgba(0, 0, 0, 0.267);
     filter: saturate(1);
     background-color: #ff8b061c;
+    scale: 1.05;
 }
 
 .skills-section .skills-con .skills-card:hover p,
