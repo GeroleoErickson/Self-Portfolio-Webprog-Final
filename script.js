@@ -48,8 +48,9 @@ const aboutContent = [
     }, 
     {
         about_con_content: [
-            {
-                h2: "About Me"
+            {titles: 
+                {title: "About Me", 
+                caption: "Get to know me"}
             },
             {
                 address_con_content: [
@@ -265,6 +266,8 @@ function showHero() {
                 
             </div>
 
+            <hr>
+
             <div class="socials d-flex">
                 ${heroContent[0].nav_content[1].nav_links[1].socials.map(social => `
                     <a href="${social.href}" target="_blank" class="d-flex">
@@ -310,7 +313,10 @@ function showAbout() {
     AboutSection.innerHTML = `
         <img src="assets/about-pictures/${aboutContent[0].img}" class="slide-right" alt="me" width="500px">
         <div class="about-con d-flex-col">
-            <h2 class="slide-left">${aboutContent[1].about_con_content[0].h2}</h2>
+            <div class="titles d-flex-col slide-left">
+                <h2>${aboutContent[1].about_con_content[0].titles.title}</h2>
+                <p>${aboutContent[1].about_con_content[0].titles.caption}</p>
+            </div>
             
             <div class="address-con location d-flex-col slide-left" >
                 <h3>${aboutContent[1].about_con_content[1].address_con_content[0].title}</h3>
