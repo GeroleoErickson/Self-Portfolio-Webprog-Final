@@ -127,7 +127,7 @@ svg{
 hr{
     width: 2px;
     height: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     border-radius: 2rem;
     
@@ -519,7 +519,7 @@ nav .navlinks .links a:hover::after {
 .location{
     margin-top: 2rem;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(90deg, #041822, #0418225b, rgba(0,0,0,0)), url(assets/about-pictures/address-bg.png);
+    background-image: linear-gradient(90deg, #0f0e17ef, #0f0e17a4, rgba(0,0,0,0)), url(assets/about-pictures/address-bg.png);
     background-position: 0 42%;
     background-size: cover;
     background-repeat: no-repeat;
