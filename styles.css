@@ -771,6 +771,10 @@ footer{
     height: fit-content;
 }
 
+/* .socials a img:hover{
+    filter: drop-shadow( 0 0 100px 10px rgba(250, 133, 0, 0.8))
+} */
+
 .socials a{
     filter: saturate(0);
 }
