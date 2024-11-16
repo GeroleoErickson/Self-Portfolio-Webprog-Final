@@ -249,21 +249,20 @@ const startBtn = document.getElementById("showHero");
 startBtn.onclick = function(){
     document.querySelector(".greetings").style.display = "none";
     showHero();
-    addLink(0);
 }
 
 
-function addLink(index) {
-    const navigation = document.getElementById("links");
-    const links = document.querySelector(".links");
+// function addLink(index) {
+//     const navigation = document.getElementById("links");
+//     const links = document.querySelector(".links");
     
-        const link = document.createElement("a");
-        link.href = heroContent[0].nav_content[1].nav_links[0].links[index].href;
-        link.textContent = heroContent[0].nav_content[1].nav_links[0].links[index].name;
-        links.appendChild(link);
+//         const link = document.createElement("a");
+//         link.href = heroContent[0].nav_content[1].nav_links[0].links[index].href;
+//         link.textContent = heroContent[0].nav_content[1].nav_links[0].links[index].name;
+//         links.appendChild(link);
     
-        navigation.appendChild(links);
-    }
+//         navigation.appendChild(links);
+//     }
 
 
 //   ${heroContent[0].nav_content[1].nav_links[0].links.map(link => `<a href="${link.href}">${link.name}</a>`).join('')}
@@ -278,9 +277,11 @@ function showHero() {
         <img src="assets/${heroContent[0].nav_content[0].image}" alt="logo" width="150px">
         <div class="navlinks d-flex" id="navlinks">
             <div class="links d-flex" id="links">
-                
+                ${heroContent[0].nav_content[1].nav_links[0].links.map(link => `
+                    <a href="${link.href}" target="_self">${link.name}</a>
+                `).join('')}
             </div>
-
+    
             <hr>
 
             <div class="socials d-flex">
@@ -318,7 +319,6 @@ function showHero() {
         defaultdesign.disabled = true;
         showAbout();
         flexes.disabled = false;
-        addLink(1);
     }
 }
 
@@ -369,7 +369,6 @@ function showAbout() {
         SkillsSection.style.display="flex";
         showSkills();
         textDesign.disabled = false;
-        addLink(2);
     }
 }
 
@@ -410,7 +409,6 @@ function showSkills(){
         ProjectSection.style.display="flex";
         showProjects();
         colors.disabled = false;
-        addLink(3);
     }
 }
 
@@ -451,7 +449,6 @@ function showProjects() {
         finalstyle.disabled = false;
         showContacts();
         showFooter();
-        addLink(4);
     }
 }
 
