@@ -1,5 +1,17 @@
-// const cssfile = document.querySelector('link[href="styles.css"]');
-// cssfile.disabled = true;
+const finalstyle = document.querySelector('link[href="styles.css"]');
+finalstyle.disabled = true;
+
+const flexes = document.querySelector('link[href="flexes.css"]');
+flexes.disabled = true;
+
+const textDesign = document.querySelector('link[href="text.css"]');
+textDesign.disabled = true;
+
+const colors = document.querySelector('link[href="colors.css"]');
+colors.disabled = true;
+
+
+
 
 
 
@@ -36,7 +48,7 @@ const heroContent = [
                 {h2: "Hello!"},
                 {h1: "I am Dave C. Geroleo"},
                 {p: "A designer and developer driven by a vision to transform ideas into immersive digital experience."},
-                {button: "Explore"}
+                {button: "Know me"}
             ]
         },
         {
@@ -82,7 +94,6 @@ const aboutContent = [
     }
 ];
 
-
 //Skills Section Content
 const skillsContent = [
     //0
@@ -125,7 +136,7 @@ const skillsContent = [
 
     //2
     {button: 
-        {name: "Contact me"}
+        {name: "Show projects"}
     }
 ];
 
@@ -214,7 +225,7 @@ const projectsContent = [
 
     //2
     {button: 
-        {name: "Show Projects"}
+        {name: "Show Contacts"}
     }
 ];
 
@@ -264,7 +275,7 @@ function showHero() {
 
     heroSection.innerHTML = `
     <nav class="d-flex">
-        <img src="assets/${heroContent[0].nav_content[0].image}" alt="logo" width="40px">
+        <img src="assets/${heroContent[0].nav_content[0].image}" alt="logo" width="150px">
         <div class="navlinks d-flex" id="navlinks">
             <div class="links d-flex" id="links">
                 
@@ -303,6 +314,9 @@ function showHero() {
     showAboutBtn.onclick = function(){
         location.href="#about-section";
         AboutSection.style.display="flex";
+        const defaultdesign = document.querySelector('link[href="default.css"]');
+        defaultdesign.disabled = true;
+        flexes.disabled = false;
         showAbout();
         addLink(1);
     }
@@ -351,6 +365,7 @@ function showAbout() {
 
     const showSkillsBtn = document.getElementById("showSkills");
     showSkillsBtn.onclick = function(){
+        textDesign.disabled = false;
         location.href="#skills-section";
         SkillsSection.style.display="flex";
         showSkills();
@@ -391,6 +406,7 @@ function showSkills(){
 
     const showProjectsBtn = document.getElementById("showProjects");
     showProjectsBtn.onclick = function(){
+        colors.disabled = false;
         location.href="#projects-section";
         ProjectSection.style.display="flex";
         showProjects();
@@ -431,6 +447,7 @@ function showProjects() {
 
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
+        finalstyle.disabled = false;
         location.href="#contact-section";
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
         showContacts();

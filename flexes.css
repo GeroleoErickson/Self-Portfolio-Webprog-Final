@@ -1,0 +1,380 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    font-family: "Questrial", sans-serif;
+    line-height: 2rem;
+    letter-spacing: 1px;
+
+}
+
+
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+}
+
+button{
+    padding: .5rem 1rem;
+    border: none;
+    background: none;
+}
+
+
+section, footer{
+    padding: 4rem 8rem;
+}
+
+
+small{
+    padding: .5rem 1rem;
+
+}
+
+input, textarea{
+    width: 100%;
+    padding: .5rem 1rem;
+    vertical-align: top;
+}
+hr{
+    width: 2px;
+    height: 30px;
+}
+/* Components */
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.d-flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-corner{
+    border-radius: .8rem;
+}
+/* End of Component */
+
+
+/* Greetings Section */
+.greetings{
+
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/*End Greetings Section */
+
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    max-height: 100vh;
+    padding: 4rem 8rem 0 8rem;
+    justify-content: space-between;
+}
+
+nav{
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    gap: 2rem;
+}
+nav img{
+    width: 200px;
+}
+
+nav .navlinks{
+    gap: 4rem;
+}
+nav .navlinks .links{
+    gap: 2rem;
+}
+
+nav .navlinks .links a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .2rem;
+}
+
+
+nav .navlinks .links a::after{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--accent-color-red);
+}
+
+
+.hero-content-con{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-content-con .left-hero-text{
+    align-items: start;
+    width: 35%;
+    gap: 3rem;
+}
+
+.hero-content-con .left-hero-text button{
+    padding: 1rem 2rem;
+}
+
+
+.hero-content-con img{
+    width: 690px;
+}
+
+
+
+.characteristics {
+    position: absolute;
+    padding: 0.5rem 1rem;
+}
+
+.characteristics.ed {
+    top: 55%;
+    right: 9%;
+    animation-delay: 2.2s;
+    z-index: 1;
+}
+
+
+.characteristics.ui-ux {
+    top: 25%;
+    right: 10%;
+    z-index: 2;
+}
+
+
+.characteristics.gd {
+    top: 80%;
+    right: 33%;
+}
+
+
+.characteristics.da {
+    top: 45%;
+    right: 40%;
+}
+
+/* End of hero Section */
+
+
+
+
+/* About Section */
+
+
+.about-section{
+    gap: 2rem;
+}
+
+.about-section img{
+    width: 600px;
+}
+
+.about-con{
+    gap: 2rem;
+}
+
+
+.address-con{
+    width: 100%;
+    height: fit-content;
+    padding: 3rem;
+    align-items: start;
+    gap: 1rem;
+}
+
+.location{
+    margin-top: 2rem;
+}
+
+.address-detail-con{
+    width: fit-content;
+    height: 100%;
+    padding: 0 0 0 1rem;
+    gap: 2rem;
+}
+.address-detail-con hr{
+    height: 130px;
+}
+
+
+
+
+/* Skills Section */
+.titles{
+    gap: 1rem;
+}
+.skills-section{
+    max-height: 100vh;
+    gap: 3rem;
+}
+
+.skills-section .skills-con{
+    gap: 2rem;
+}
+
+.skills-section .skills-con .skills-card{
+    aspect-ratio: 3/4;
+    padding: 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+
+.skills-section .skills-con .skills-card .img-text img{
+    height: 80px;
+    object-fit: contain;
+}
+
+/* End of Skills Section */
+
+
+
+
+/* Projects Secrion */
+
+.projects-section{
+    gap: 4rem;
+}
+
+
+.projects-section .projects-con{
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 4fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.projects-section .projects-con .projects-card{
+    aspect-ratio: 1/1;
+    position: relative;
+    min-width: 70%;
+}
+
+.projects-section .projects-con .projects-card img{
+    opacity: 10%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects-section .projects-con .projects-card .gradient-text{
+    align-items: start;
+    padding: 2rem;
+    justify-content: end;
+    gap: 1rem;
+    position: absolute;
+    bottom: -30rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* End of Project Section */
+
+
+/* Contact Setion */
+.contact-section{
+    gap: 4rem;
+    padding-bottom: 8rem;
+}
+
+.contact-section .contact-con{
+    width: 100%;
+    max-height: 100vh;
+    padding: 4rem;
+}
+
+.contact-section .contact-con form{
+    width: 40%;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+form .name-form,
+form .email-form, 
+form .buttons{
+    gap: 1rem;
+    width: 100%;
+}
+
+.message{
+    height: 250px;
+}
+
+form .buttons button{
+    justify-content: center;
+    border-radius: .5rem;
+    gap: .5rem;
+    width: 100%;
+}
+
+form .buttons button:hover{
+    transform: scale(1.05);
+}
+
+
+/* End of Contact Section */
+
+
+/* Footer */
+footer{
+    gap: 2rem;
+}
+
+.foot-nav-links, .socials-con{
+    gap: 1rem;
+}
+
+.foot-nav-links .foot-links{
+    gap: 2rem;
+}
+
+
+.socials{
+    gap: 2rem;
+    height: fit-content;
+}
+
+/* .socials a img:hover{
+    filter: drop-shadow( 0 0 100px 10px rgba(250, 133, 0, 0.8))
+} */
+
+.socials a img{
+    height: auto;
+    width: 1.5rem;
+}
+
+/* End of footer */
+
+.hero-section,
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section,
+.footer-section{
+    display: none;
+}
+
