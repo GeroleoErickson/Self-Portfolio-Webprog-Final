@@ -1,3 +1,7 @@
+// const cssfile = document.querySelector('link[href="styles.css"]');
+// cssfile.disabled = true;
+
+
 
 // Hero Section Contents
 const heroContent = [
@@ -289,9 +293,9 @@ function showHero() {
         <img class="floatUp" src="assets/hero-pictures/${heroContent[1].content[1].my_self}" alt="me" width="700px">
     </div>
 
-    <p class="characteristics animated-buttons ed">Front End Developer</p>
-    <p class="characteristics animated-buttons ui-ux">UI/UX Desiner</p>
-    <p class="characteristics animated-buttons gd">Graphics Desiner</p>
+    <p class="characteristics animated-buttons ed">Front-End Developer</p>
+    <p class="characteristics animated-buttons ui-ux">UI/UX Designer</p>
+    <p class="characteristics animated-buttons gd">Graphics Designer</p>
     <p class="characteristics animated-buttons da" >Digital Artist</p>
     `;
 
