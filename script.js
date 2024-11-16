@@ -316,8 +316,8 @@ function showHero() {
         AboutSection.style.display="flex";
         const defaultdesign = document.querySelector('link[href="default.css"]');
         defaultdesign.disabled = true;
-        flexes.disabled = false;
         showAbout();
+        flexes.disabled = false;
         addLink(1);
     }
 }
@@ -365,10 +365,10 @@ function showAbout() {
 
     const showSkillsBtn = document.getElementById("showSkills");
     showSkillsBtn.onclick = function(){
-        textDesign.disabled = false;
         location.href="#skills-section";
         SkillsSection.style.display="flex";
         showSkills();
+        textDesign.disabled = false;
         addLink(2);
     }
 }
@@ -406,11 +406,10 @@ function showSkills(){
 
     const showProjectsBtn = document.getElementById("showProjects");
     showProjectsBtn.onclick = function(){
-        colors.disabled = false;
         location.href="#projects-section";
         ProjectSection.style.display="flex";
         showProjects();
-        
+        colors.disabled = false;
         addLink(3);
     }
 }
@@ -447,9 +446,9 @@ function showProjects() {
 
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
-        finalstyle.disabled = false;
         location.href="#contact-section";
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
+        finalstyle.disabled = false;
         showContacts();
         showFooter();
         addLink(4);
@@ -472,7 +471,7 @@ function showContacts() {
             <h2>${ContactsContent[0].titles.title}</h2>
             <p>${ContactsContent[0].titles.caption}</p>
         </div>
-        <div class="contact-con">
+        <div class="contact-con floatUp">
             <form action="" class="d-flex-col">
                 <div class="name-form d-flex">
                     <input type="text" placeholder="${ContactsContent[1].formFields.firstName}">

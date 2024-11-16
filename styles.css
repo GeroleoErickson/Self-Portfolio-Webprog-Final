@@ -437,7 +437,7 @@ nav .navlinks .links a:hover::after {
 
 .characteristics.ed {
     top: 55%;
-    right: 9%;
+    right: 7%;
     animation-delay: 2.2s;
     background-color: #fb8500;
     z-index: 1;
@@ -449,7 +449,7 @@ nav .navlinks .links a:hover::after {
 
 .characteristics.ui-ux {
     top: 25%;
-    right: 10%;
+    right: 8%;
     animation-delay: 2.6s;
     background-color: #219ebc;
     
@@ -685,7 +685,8 @@ small{
 
 .contact-section .contact-con{
     width: 100%;
-    
+    opacity: 0;
+    transform: translate(50px);
     max-height: 100vh;
     background-image: url(assets/contacts/contact\ background.png);
     background-repeat: no-repeat;
@@ -698,9 +699,6 @@ small{
 .contact-section .contact-con form{
     width: 40%;
     gap: 1rem;
-    /* background-color: #ffffff15;
-    border: 1px solid rgba(255, 255, 255, 0.274);
-    backdrop-filter: blur(20px); */
     padding: 3rem;
     border-radius: .5rem;
 }
