@@ -48,7 +48,7 @@ const heroContent = [
                 {h2: "Hello!"},
                 {h1: "I am Dave C. Geroleo"},
                 {p: "A designer and developer driven by a vision to transform ideas into immersive digital experience."},
-                {button: "Know me"}
+                {button: "Know Me"}
             ]
         },
         {
@@ -136,7 +136,7 @@ const skillsContent = [
 
     //2
     {button: 
-        {name: "Show projects"}
+        {name: "Show Projects"}
     }
 ];
 
@@ -225,7 +225,7 @@ const projectsContent = [
 
     //2
     {button: 
-        {name: "Show Contacts"}
+        {name: "Contact Me"}
     }
 ];
 
