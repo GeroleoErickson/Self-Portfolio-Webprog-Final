@@ -484,9 +484,8 @@ function showProjects() {
         showFooter();
         
         setTimeout(() => {
-            showHero();
             location.href = "#hero-section";
-            
+            showHero();
         }, 2000); 
 
         
