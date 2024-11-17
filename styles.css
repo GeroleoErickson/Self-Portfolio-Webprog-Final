@@ -840,7 +840,6 @@ footer{
 
 .pop-card img{
     image-rendering: auto;
-    margin-top: -12rem;
     width: 350px;
     height: auto;
 }
@@ -877,7 +876,6 @@ footer{
 
 .pop-card{
     gap: 2rem;
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
