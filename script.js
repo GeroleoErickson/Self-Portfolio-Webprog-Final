@@ -10,7 +10,7 @@ textDesign.disabled = true;
 const colors = document.querySelector('link[href="colors.css"]');
 colors.disabled = true;
 
-
+document.getElementById('thank-you').style.display="none";
 
 
 
@@ -438,6 +438,9 @@ function showSkills(){
     }
 }
 
+let count = 0;
+
+
 //Show Projects
 function showProjects() {
     ProjectSection.innerHTML = `
@@ -467,8 +470,14 @@ function showProjects() {
         </button>
     `;
 
+    
+
+
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
+        
+
+
         skillsContent[2].button.name = ""
         showSkills();
         
@@ -476,15 +485,24 @@ function showProjects() {
         location.href="#contact-section";
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
         finalstyle.disabled = false;
+
+        if(count == 0){
+            const thankyousecton = document.getElementById('thank-you');
+            thankyousecton.style.display="flex";
+            const thankyouBtn = document.getElementById('thankyouBtn');
+            count++;
+        }
+
         showContacts();
         showFooter();
         
-        setTimeout(() => {
-            location.href = "#hero-section";
-            showHero();
-        }, 2000); 
 
-        
+
+        thankyouBtn.onclick = function(){
+            showHero();
+            location.href = "#hero-section";
+            document.getElementById('thank-you').style.display="none";
+        }
     }
 
     

@@ -20,6 +20,7 @@ html{
 
 
 body{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100dvw;
@@ -59,9 +60,10 @@ section{
 }
 .greetings .greet-title h2{
     font-size: 1.8rem;
+    font-weight: 300;
 }
 
-.greetings p, .highlights{
+.greetings p, .highlights, .pop-card p{
     width: 45%;
     font-size: 1.2rem;
     text-align: center;
@@ -74,7 +76,8 @@ section{
     color: #ff8906;
 }
 
-.greetings button{
+.greetings button,
+.pop-card button{
     padding: .5rem 1.5rem;
     font-family: "Poppins", serif;
     border: none;
@@ -96,18 +99,7 @@ section{
         transform: translateY(10px);
     }
 }
-/* <Section class="greetings card-corner d-flex-col">
-        <div class="greet-title">
-            <h1>404</h1>
-            <h2>Page not Found</h2>
-        </div>
 
-        <img src="assets/robot.png" alt="sad-robot" width="230px">
-
-        <p>Uh oh! This website is not yet finished and needs further adjustments. Would you like to help me complete the design? Click 
-            <span class="highlights">'Load Page'</span> below to start building.</p>
-        <button id="showHero" class="animated-buttons">Load page</button>
-    </Section> */
 
 
 
