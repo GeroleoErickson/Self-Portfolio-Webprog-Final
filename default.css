@@ -19,6 +19,7 @@ html{
 
 
 
+
 body{
     position: relative;
     display: flex;
@@ -63,12 +64,12 @@ section{
     font-weight: 300;
 }
 
-.greetings p, .highlights, .pop-card p{
-    width: 45%;
+.greetings p, .highlights{
+    width: 35%;
     font-size: 1.2rem;
     text-align: center;
     font-family: "Questrial", sans-serif;
-    color: #4b4b4b;
+    color: #929292;
 }
 
 .highlights{
@@ -76,8 +77,13 @@ section{
     color: #ff8906;
 }
 
-.greetings button,
-.pop-card button{
+.greetings img{
+    image-rendering: auto;
+    width: 350px;
+    height: auto;
+}
+
+.greetings button{
     padding: .5rem 1.5rem;
     font-family: "Poppins", serif;
     border: none;
@@ -88,6 +94,10 @@ section{
     color: white;
     cursor: pointer;
     animation: up-down 2s ease-in-out infinite;
+}
+
+.greetings button:hover{
+    scale: 1.05;
 }
 
 

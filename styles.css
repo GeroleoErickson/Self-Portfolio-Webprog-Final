@@ -838,6 +838,13 @@ footer{
     color: #ffffff;
 }
 
+.pop-card img{
+    image-rendering: auto;
+    margin-top: -12rem;
+    width: 350px;
+    height: auto;
+}
+
 .pop-card button{
     padding: .5rem 1.5rem;
     font-family: "Poppins", serif;
@@ -862,8 +869,8 @@ footer{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.589);
-    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(60px);
     z-index: 999;
     
 }
@@ -873,9 +880,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     background-color: rgba(255, 255, 255, 0.308);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(60px);
     width: 20%;
     text-align: center;
     padding: 2rem;
@@ -884,9 +890,7 @@ footer{
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 12px 60px 3px #00000054;
 }
-.pop-card img{
-    margin-top: -12rem;
-}
+
 
 .pop-card p{
     width: 100%;
@@ -894,10 +898,14 @@ footer{
 }
 
 .pop-card button{
+    margin-top: 2rem;
     animation: none;
     width: 100%;
 }
 
+.pop-card button:hover{
+    scale: 1.05;
+}
 
 /* <div class="thank-you pop-up">
         <div class="pop-card">
