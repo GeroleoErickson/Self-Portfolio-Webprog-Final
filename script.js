@@ -420,7 +420,7 @@ function showSkills(){
 
     const showProjectsBtn = document.getElementById("showProjects");
     showProjectsBtn.onclick = function(){
-        aboutContent[1].about_con_content[1].address_con_content[3].button.name = "Show Skills";
+        aboutContent[1].about_con_content[1].address_con_content[3].button.name = "";
         showAbout();
         
 
@@ -428,7 +428,7 @@ function showSkills(){
         ProjectSection.style.display="flex";
         showProjects();
 
-        skillsContent[2].button.name ="Show Projects";
+        skillsContent[2].button.name ="";
         
 
         setTimeout(()=>{
@@ -469,7 +469,7 @@ function showProjects() {
 
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
-        skillsContent[2].button.name = "Show Projects"
+        skillsContent[2].button.name = ""
         showSkills();
         
 
@@ -486,6 +486,8 @@ function showProjects() {
 
         
     }
+
+    
 }
 
 //Show Contacts
@@ -527,7 +529,7 @@ function showContacts() {
             </form>
         </div>
     `;
-    projectsContent[2].button.name = "Contact Me";
+    projectsContent[2].button.name = "";
     showProjects();
 }
 
@@ -555,8 +557,31 @@ function showFooter(){
     </div>
     <p>&copy; 2024-2025 Dave Geroleo. Alrights Reserve</p>
 `;
-
-
-
 }
+
+
+//floating anim
+// document.querySelectorAll('.floatUp').forEach((float)=>{
+//     float.classList.add('floating-upwards-default');
+// });
+
+// floating_anim();
+
+// const floatUpObserver = new IntersectionObserver((entries)=>{
+//     entries.forEach((entry)=>{
+//         if(entry.isIntersecting){
+//             entry.target.classList.add('floating-upwards-final');
+//         }
+//         else{
+//             entry.target.classList.remove('floating-upwards-final');
+//         }
+//     });
+// });
+
+// function floating_anim(){
+//     const temp = document.querySelectorAll('.floating-upwards-default');
+//     temp.forEach((el)=> floatUpObserver.observe(el));
+// }
+
+
 

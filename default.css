@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -20,29 +21,97 @@ html{
 
 body{
     display: flex;
+    flex-direction: column;
     width: 100dvw;
     height: 100dvh;
 }
 
 section{
     padding: 4rem;
-    width: 100dvw;
-    height: fit-content;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-
 .greetings{
-    height: 100%;
-    width: 100% ;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 2rem;
+    
 }
-button{
-    padding: .5rem 1rem;
+
+.greetings .greet-title{
+    text-align: center;
+    width: fit-content;
 }
+
+.greetings .greet-title h1,
+.greetings .greet-title h2{
+    font-family: "Poppins", serif;
+    line-height:5rem;
+    color: #929292;
+}
+
+.greetings .greet-title h1{
+    font-size: 8rem;
+}
+.greetings .greet-title h2{
+    font-size: 1.8rem;
+}
+
+.greetings p, .highlights{
+    width: 45%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+    color: #4b4b4b;
+}
+
+.highlights{
+    font-weight: 900;
+    color: #ff8906;
+}
+
+.greetings button{
+    padding: .5rem 1.5rem;
+    font-family: "Poppins", serif;
+    border: none;
+    border-radius: .5rem;
+    background: linear-gradient(45deg, #ff8906 0%, #fffc00 100%);
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    animation: up-down 2s ease-in-out infinite;
+}
+
+
+@keyframes up-down {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+/* <Section class="greetings card-corner d-flex-col">
+        <div class="greet-title">
+            <h1>404</h1>
+            <h2>Page not Found</h2>
+        </div>
+
+        <img src="assets/robot.png" alt="sad-robot" width="230px">
+
+        <p>Uh oh! This website is not yet finished and needs further adjustments. Would you like to help me complete the design? Click 
+            <span class="highlights">'Load Page'</span> below to start building.</p>
+        <button id="showHero" class="animated-buttons">Load page</button>
+    </Section> */
+
+
+
+
 
 .hero-section{
     flex-direction: column;
