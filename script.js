@@ -48,7 +48,7 @@ const heroContent = [
                 {h2: "Hello!"},
                 {h1: "I am Dave C. Geroleo"},
                 {p: "A designer and developer driven by a vision to transform ideas into immersive digital experience."},
-                {button: "Know Me"}
+                {button: "Fix Layout"}
             ]
         },
         {
@@ -86,7 +86,7 @@ const aboutContent = [
                         }
                     },
                     {
-                        button: { name: "Show Skills" }
+                        button: { name: "Add font Styles" }
                     }
                 ]
             }
@@ -136,7 +136,7 @@ const skillsContent = [
 
     //2
     {button: 
-        {name: "Show Projects"}
+        {name: "Add Colors"}
     }
 ];
 
@@ -225,7 +225,7 @@ const projectsContent = [
 
     //2
     {button: 
-        {name: "Contact Me"}
+        {name: "Add Animations"}
     }
 ];
 
@@ -313,9 +313,13 @@ function showHero() {
 
     const showAboutBtn = document.getElementById('showAbout');
     showAboutBtn.onclick = function(){
+        heroContent[1].content[0].left_content[3].button = 'Know Me';
+        showHero();
+
         AboutSection.style.display="flex";
         const defaultdesign = document.querySelector('link[href="default.css"]');
         defaultdesign.disabled = true;
+
 
         setTimeout(() => {
             flexes.disabled = false;
@@ -373,13 +377,17 @@ function showAbout() {
 
     const showSkillsBtn = document.getElementById("showSkills");
     showSkillsBtn.onclick = function(){
+        aboutContent[1].about_con_content[1].address_con_content[3].button.name = "Show Skills";
+        showAbout();
+
         location.href="#skills-section";
         SkillsSection.style.display="flex";
         showSkills();
 
+
         setTimeout(()=>{
             textDesign.disabled = false
-        }, 500);
+        }, 800);
         ;
     }
 }
@@ -417,9 +425,15 @@ function showSkills(){
 
     const showProjectsBtn = document.getElementById("showProjects");
     showProjectsBtn.onclick = function(){
+        skillsContent[2].button.name = "Show Projects"
+        showSkills();
+
         location.href="#projects-section";
         ProjectSection.style.display="flex";
         showProjects();
+
+        showProjectsBtn.textContent ="Show Projects";
+        
 
         setTimeout(()=>{
             colors.disabled = false;
@@ -460,6 +474,9 @@ function showProjects() {
 
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
+        projectsContent[2].button.name = "Contact Me";
+        showProjects();
+
         location.href="#contact-section";
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
         finalstyle.disabled = false;
@@ -469,7 +486,10 @@ function showProjects() {
         setTimeout(() => {
             showHero();
             location.href = "#hero-section";
+            
         }, 2000); 
+
+        
     }
 }
 
