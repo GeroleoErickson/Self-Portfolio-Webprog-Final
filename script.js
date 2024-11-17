@@ -313,16 +313,20 @@ function showHero() {
 
     const showAboutBtn = document.getElementById('showAbout');
     showAboutBtn.onclick = function(){
-        location.href="#about-section";
         AboutSection.style.display="flex";
         const defaultdesign = document.querySelector('link[href="default.css"]');
         defaultdesign.disabled = true;
-        showAbout();
-        
 
         setTimeout(() => {
             flexes.disabled = false;
         }, 500);
+
+        setTimeout(() => {
+            showAbout();
+            location.href="#about-section";
+        }, 1000);
+
+        
     }
 }
 
