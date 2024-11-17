@@ -8,12 +8,11 @@ html{
     margin: 0;
     box-sizing: border-box;
     transition: all .3s ease;
-    font-family: "Questrial", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 2rem;
     letter-spacing: 1px;
 
 }
-
 
 
 body{
