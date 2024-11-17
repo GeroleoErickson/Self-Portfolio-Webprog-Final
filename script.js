@@ -313,8 +313,6 @@ function showHero() {
 
     const showAboutBtn = document.getElementById('showAbout');
     showAboutBtn.onclick = function(){
-        heroContent[1].content[0].left_content[3].button = 'Know Me';
-        showHero();
 
         AboutSection.style.display="flex";
         const defaultdesign = document.querySelector('link[href="default.css"]');
@@ -323,19 +321,16 @@ function showHero() {
 
         setTimeout(() => {
             flexes.disabled = false;
-        }, 500);
+        }, 200);
 
         setTimeout(() => {
             showAbout();
             location.href="#about-section";
-        }, 1000);
+        }, 500);
 
         
     }
 }
-
-
-
 
 //show about
 function showAbout() {
@@ -377,8 +372,9 @@ function showAbout() {
 
     const showSkillsBtn = document.getElementById("showSkills");
     showSkillsBtn.onclick = function(){
-        aboutContent[1].about_con_content[1].address_con_content[3].button.name = "Show Skills";
-        showAbout();
+        heroContent[1].content[0].left_content[3].button = 'Know Me';
+        showHero();
+
 
         location.href="#skills-section";
         SkillsSection.style.display="flex";
@@ -391,7 +387,6 @@ function showAbout() {
         ;
     }
 }
-
 
 //Show Skills
 function showSkills(){
@@ -425,14 +420,15 @@ function showSkills(){
 
     const showProjectsBtn = document.getElementById("showProjects");
     showProjectsBtn.onclick = function(){
-        skillsContent[2].button.name = "Show Projects"
-        showSkills();
+        aboutContent[1].about_con_content[1].address_con_content[3].button.name = "Show Skills";
+        showAbout();
+        
 
         location.href="#projects-section";
         ProjectSection.style.display="flex";
         showProjects();
 
-        showProjectsBtn.textContent ="Show Projects";
+        skillsContent[2].button.name ="Show Projects";
         
 
         setTimeout(()=>{
@@ -441,7 +437,6 @@ function showSkills(){
         
     }
 }
-
 
 //Show Projects
 function showProjects() {
@@ -474,8 +469,9 @@ function showProjects() {
 
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
-        projectsContent[2].button.name = "Contact Me";
-        showProjects();
+        skillsContent[2].button.name = "Show Projects"
+        showSkills();
+        
 
         location.href="#contact-section";
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
@@ -492,6 +488,7 @@ function showProjects() {
     }
 }
 
+//Show Contacts
 const ContactsContent = [
     {titles: 
         {title: "Contact Me", 
@@ -530,11 +527,11 @@ function showContacts() {
             </form>
         </div>
     `;
+    projectsContent[2].button.name = "Contact Me";
+    showProjects();
 }
 
-
-
-
+//Show Footer
 function showFooter(){
     FooterSection.innerHTML = `
     <img src="assets/${heroContent[0].nav_content[0].image}" alt="logo" width="200px">
