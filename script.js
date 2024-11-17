@@ -318,7 +318,11 @@ function showHero() {
         const defaultdesign = document.querySelector('link[href="default.css"]');
         defaultdesign.disabled = true;
         showAbout();
-        flexes.disabled = false;
+        
+
+        setTimeout(() => {
+            flexes.disabled = false;
+        }, 500);
     }
 }
 
@@ -368,7 +372,11 @@ function showAbout() {
         location.href="#skills-section";
         SkillsSection.style.display="flex";
         showSkills();
-        textDesign.disabled = false;
+
+        setTimeout(()=>{
+            textDesign.disabled = false
+        }, 500);
+        ;
     }
 }
 
@@ -408,7 +416,11 @@ function showSkills(){
         location.href="#projects-section";
         ProjectSection.style.display="flex";
         showProjects();
-        colors.disabled = false;
+
+        setTimeout(()=>{
+            colors.disabled = false;
+        }, 500);
+        
     }
 }
 
@@ -449,6 +461,11 @@ function showProjects() {
         finalstyle.disabled = false;
         showContacts();
         showFooter();
+        
+        setTimeout(() => {
+            showHero();
+            location.href = "#hero-section";
+        }, 2000); 
     }
 }
 

@@ -438,7 +438,7 @@ nav .navlinks .links a:hover::after {
 .characteristics.ed {
     top: 55%;
     right: 7%;
-    animation-delay: 2.2s;
+    animation-delay: 3s;
     background-color: #fb8500;
     z-index: 1;
 }
@@ -450,7 +450,7 @@ nav .navlinks .links a:hover::after {
 .characteristics.ui-ux {
     top: 25%;
     right: 8%;
-    animation-delay: 2.6s;
+    animation-delay: 3.4s;
     background-color: #219ebc;
     
     z-index: 2;
@@ -464,7 +464,7 @@ nav .navlinks .links a:hover::after {
     top: 80%;
     right: 33%;
     background-color: #ff006e;
-    animation-delay: 2s;
+    animation-delay: 2.8s;
     z-index: 3;
 }
 
@@ -475,7 +475,7 @@ nav .navlinks .links a:hover::after {
 .characteristics.da {
     top: 45%;
     right: 40%;
-    animation-delay: 2.4s;
+    animation-delay: 3.2s;
     background-color: #1dd3b0;
     z-index: 4;
 }
