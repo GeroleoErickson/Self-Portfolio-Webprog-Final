@@ -499,8 +499,8 @@ function showProjects() {
 
 
         thankyouBtn.onclick = function(){
-            showHero();
             location.href = "#hero-section";
+            showHero();
             document.getElementById('thank-you').style.display="none";
         }
     }
@@ -576,30 +576,4 @@ function showFooter(){
     <p>&copy; 2024-2025 Dave Geroleo. Alrights Reserve</p>
 `;
 }
-
-
-//floating anim
-// document.querySelectorAll('.floatUp').forEach((float)=>{
-//     float.classList.add('floating-upwards-default');
-// });
-
-// floating_anim();
-
-// const floatUpObserver = new IntersectionObserver((entries)=>{
-//     entries.forEach((entry)=>{
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('floating-upwards-final');
-//         }
-//         else{
-//             entry.target.classList.remove('floating-upwards-final');
-//         }
-//     });
-// });
-
-// function floating_anim(){
-//     const temp = document.querySelectorAll('.floating-upwards-default');
-//     temp.forEach((el)=> floatUpObserver.observe(el));
-// }
-
-
 
