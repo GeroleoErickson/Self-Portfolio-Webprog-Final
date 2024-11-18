@@ -60,7 +60,7 @@ button{
 section, footer{
     padding: 4rem 8rem;
     background: var(--background-color-dark);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a{
