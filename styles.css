@@ -60,6 +60,7 @@ button{
 section, footer{
     padding: 4rem 8rem;
     background: var(--background-color-dark);
+    overflow-x: hidden;
 }
 
 a{
@@ -331,12 +332,13 @@ hr{
     max-height: 100vh;
     background: 
     linear-gradient(0deg, #0f0e17, rgba(15, 14, 23, 0.3)), 
-    url('assets/animatedBg3.gif') no-repeat center;
+    url('assets/animatedBg.gif') no-repeat center;
     background-size: cover;
     padding: 4rem 8rem 0 8rem;
     justify-content: space-between;
     color: white;
     overflow: hidden;
+    transition: background-image 2s ease-in-out, opacity 2s ease-in-out;
 }
 
 nav{
