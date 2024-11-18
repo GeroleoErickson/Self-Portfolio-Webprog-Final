@@ -13,7 +13,6 @@ html{
     font-family: "Questrial", sans-serif;
     line-height: 2rem;
     letter-spacing: 1px;
-
 }
 
 :root{
@@ -624,6 +623,7 @@ nav .navlinks .links a:hover::after {
     background-color: rgba(0, 0, 0, 0.137);
     backdrop-filter: blur(10px);
     z-index: 999;
+    overflow: hidden;
 }
 
 #image-preview img{
