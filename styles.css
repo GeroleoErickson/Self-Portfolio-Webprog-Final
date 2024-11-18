@@ -435,7 +435,7 @@ nav .navlinks .links a:hover::after {
 
 .characteristics.ed {
     top: 55%;
-    right: 7%;
+    right: 8%;
     animation-delay: 3s;
     background-color: #fb8500;
     z-index: 1;
@@ -447,7 +447,7 @@ nav .navlinks .links a:hover::after {
 
 .characteristics.ui-ux {
     top: 25%;
-    right: 8%;
+    right: 9%;
     animation-delay: 3.4s;
     background-color: #219ebc;
     
