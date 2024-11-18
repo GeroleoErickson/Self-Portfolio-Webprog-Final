@@ -15,6 +15,7 @@ document.getElementById('thank-you').style.display="none";
 
 
 
+
 // Hero Section Contents
 const heroContent = [
     {
@@ -441,9 +442,14 @@ function showSkills(){
 let count = 0;
 
 
+
 //Show Projects
 function showProjects() {
     ProjectSection.innerHTML = `
+        <div id="image-preview"> 
+            <img src="" id="img-con-prev">
+        </div>
+
         <div class="titles d-flex-col">
             <h2>${projectsContent[0].titles.title}</h2>
             <p>${projectsContent[0].titles.caption}</p>
@@ -456,7 +462,9 @@ function showProjects() {
                     <div class="gradient-text d-flex-col beat">
                         <h3>${project.projects_card[1].details.title}</h3>
                         <p>${project.projects_card[1].details.desc}</p>
-                        <a href="#" target="_blank"><small>${project.projects_card[1].details.small}</small></a>
+                        <small onclick="fullView('assets/projects/${project.projects_card[0].img}')">
+                            ${project.projects_card[1].details.small}
+                        </small>
                     </div>
                 </div>
             `).join('')}
@@ -475,13 +483,12 @@ function showProjects() {
 
     const showContactsBtn = document.getElementById("showContacts");
     showContactsBtn.onclick = function(){
-        
 
 
         skillsContent[2].button.name = ""
         showSkills();
         
-
+        
         location.href="#contact-section";
         [ContacsSection, FooterSection].forEach(section => section.style.display="flex");
         finalstyle.disabled = false;
@@ -492,21 +499,24 @@ function showProjects() {
             const thankyouBtn = document.getElementById('thankyouBtn');
             count++;
         }
-
+        
         showContacts();
         showFooter();
         
-
-
         thankyouBtn.onclick = function(){
             location.href = "#hero-section";
             showHero();
             document.getElementById('thank-you').style.display="none";
         }
+        
+        document.getElementById('image-preview').style.display="none";
+        
     }
 
     
 }
+
+
 
 //Show Contacts
 const ContactsContent = [
@@ -575,5 +585,19 @@ function showFooter(){
     </div>
     <p>&copy; 2024-2025 Dave Geroleo. Alrights Reserve</p>
 `;
+}
+
+function fullView(imageSrc) {
+    const image_preview = document.getElementById("image-preview");
+    const img_con_prev = document.getElementById("img-con-prev");
+
+    img_con_prev.src = imageSrc;
+    image_preview.style.display = "flex";
+    document.body.style.overflow = "hidden";
+
+    image_preview.onclick = () => {
+    image_preview.style.display = "none";
+    document.body.style.overflow = "auto";
+    };
 }
 

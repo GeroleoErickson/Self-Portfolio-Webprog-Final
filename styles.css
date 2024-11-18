@@ -89,7 +89,7 @@ p{
 small{
     color: var(--button-text);
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: .1rem 1rem;
     border-radius: .5rem;
     background-color: var(--buttons);
 }
@@ -98,16 +98,16 @@ input, textarea{
     width: 100%;
     padding: .5rem 1rem;
     border-radius: .5rem;
-    border: 1px solid rgba(255, 255, 255, 0.158);
-    color: var(--paragraph);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: var(--background-color-dark);
     outline: none;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 1px 22px 35px -6px rgba(0, 0, 0, 0.753);
     vertical-align: top;
     backdrop-filter: blur(20px);
 }
 textarea::placeholder, input::placeholder{
-    color: var(--paragraph);
+    color: var(--background-color-dark);
 }
 
 textarea:hover,
@@ -329,11 +329,11 @@ hr{
 .hero-section {
     width: 100%;
     max-height: 100vh;
-    background: url(assets/hero-pictures/hero-background.png) no-repeat center;
+    background: 
+    linear-gradient(0deg, #0f0e17, rgba(15, 14, 23, 0.3)), 
+    url('assets/animatedBg3.gif') no-repeat center;
     background-size: cover;
     padding: 4rem 8rem 0 8rem;
-    /* animation: slideup 1s ease forwards;  
-    opacity: 1;   */
     justify-content: space-between;
     color: white;
     overflow: hidden;
@@ -426,6 +426,7 @@ nav .navlinks .links a:hover::after {
 
 .hero-content-con img{
     width: 690px;
+    mask-image: linear-gradient(to bottom, #0f0e17, #0f0e17, #0f0e17ee,#0f0e1700);
 }
 
 
@@ -524,6 +525,7 @@ nav .navlinks .links a:hover::after {
 
 .about-section img{
     width: 600px;
+    mask-image: linear-gradient(to bottom, #0f0e17, #0f0e17, #0f0e173d,#0f0e1700);
 }
 
 .about-con{
@@ -620,6 +622,33 @@ nav .navlinks .links a:hover::after {
 
 
 /* Projects Secrion */
+#image-preview{
+    display: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.137);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+#image-preview img{
+    width: auto;
+    height: 100%;
+}
+
+
+/* <div id="image-preview'>
+<img src="" id="img-con-prev">
+</div> */
+
 
 .projects-section{
     gap: 4rem;
@@ -699,7 +728,9 @@ small{
     opacity: 0;
     transform: translate(50px);
     max-height: 100vh;
-    background-image: url(assets/contacts/contact\ background.png);
+    background-image: 
+        linear-gradient(0deg, rgba(15, 14, 23, 1), rgba(15, 14, 23, 0.77), rgba(15, 14, 23, 0.24), rgba(15, 14, 23, 0)), 
+        url('assets/contacts/contact\ background.png');
     background-repeat: no-repeat;
     background-size: 130%;
     background-position:left;
@@ -759,7 +790,7 @@ form .buttons button svg{
 
 /* Footer */
 footer{
-    background-color: var(--footer-background-dark);
+    background-color: var(--background-color-dark);
     gap: 2rem;
 }
 
