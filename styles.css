@@ -338,7 +338,6 @@ hr{
     justify-content: space-between;
     color: white;
     overflow: hidden;
-    transition: background-image 2s ease-in-out, opacity 2s ease-in-out;
 }
 
 nav{
