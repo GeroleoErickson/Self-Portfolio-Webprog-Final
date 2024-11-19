@@ -586,7 +586,7 @@ function showFooter(){
                 `).join('')}
         </div>
     </div>
-    <p>&copy; 2024-2025 Dave Geroleo. Alrights Reserve</p>
+    <p>&copy; 2024 Dave Geroleo. Alrights Reserve</p>
 `;
 }
 
