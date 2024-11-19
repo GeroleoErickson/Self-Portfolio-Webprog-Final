@@ -513,10 +513,6 @@ function showProjects() {
         document.getElementById('image-preview').style.display="none";
         
     }
-
-
-
-    
 }
 
 
