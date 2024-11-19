@@ -604,28 +604,28 @@ function fullView(imageSrc) {
     };
 }
 
-// const hero = document.querySelector('.hero-section');
-        // const backgrounds = [
-        //     "url('assets/animatedBg.gif')",
-        //     "url('assets/animatedBg2.gif')",
-        //     "url('assets/animatedBg3.gif')",
-        //     "url('assets/animatedBg4.gif')"
-        // ];
-        // let currentBackground = 0;
+const hero = document.querySelector('.hero-section');
+        const backgrounds = [
+            "url('assets/animatedBg.gif')",
+            "url('assets/animatedBg2.gif')",
+            "url('assets/animatedBg3.gif')",
+            "url('assets/animatedBg4.gif')"
+        ];
+        let currentBackground = 0;
 
-        // function changeBackground() {
-        //     currentBackground = (currentBackground + 1) % backgrounds.length;
-        //     hero.style.backgroundImage = `
-        //         linear-gradient(0deg, #0f0e17, rgba(15, 14, 23, 0.3)), 
-        //         ${backgrounds[currentBackground]}
-        //     `;
-        // }
-
-        
-        // setInterval(changeBackground, 8000);
+        function changeBackground() {
+            currentBackground = (currentBackground + 1) % backgrounds.length;
+            hero.style.backgroundImage = `
+                linear-gradient(0deg, #0f0e17, rgba(15, 14, 23, 0.3)), 
+                ${backgrounds[currentBackground]}
+            `;
+        }
 
         
-        // changeBackground();
+        setInterval(changeBackground, 8000);
+
+        
+        changeBackground();
 
 
 
